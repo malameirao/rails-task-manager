@@ -1,9 +1,7 @@
-<%= form_with model: @tasks do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.check_box :completed %>
-  <%= f.label :completed %>
-  <%= f.submit %>
+<%= simple_form_for @tasks do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.input :completed %>
+  <%= f.button :submit %>
 <% end %>
+
