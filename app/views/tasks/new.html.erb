@@ -1,9 +1,2 @@
-<%= form_with model: @tasks do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.check_box :completed %>
-  <%= f.label :completed %>
-  <%= f.submit %>
-<% end %>
+<h1>Add a new task</h1>
+<%= render 'form' %>
